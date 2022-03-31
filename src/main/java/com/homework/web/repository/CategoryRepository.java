@@ -1,4 +1,4 @@
-package com.homework.web.respository;
+package com.homework.web.repository;
 
 import com.homework.web.pojo.Category;
 import org.springframework.data.jpa.repository.JpaRepository;

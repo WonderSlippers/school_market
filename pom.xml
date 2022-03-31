@@ -9,7 +9,7 @@
         <relativePath />
     </parent>
     <groupId>com.homework</groupId>
-    <artifactId>novel3</artifactId>
+    <artifactId>goods3</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>

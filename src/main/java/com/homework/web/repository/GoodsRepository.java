@@ -1,4 +1,4 @@
-package com.homework.web.respository;
+package com.homework.web.repository;
 
 import com.homework.web.pojo.Goods;
 
@@ -21,7 +21,7 @@ public interface GoodsRepository extends JpaRepository<Goods, Integer> {
 	@Query(value = "select * from goods where user_id = :user_id", nativeQuery = true)
 	List<Goods> selectByUser_id(@Param(value = "user_id") Integer user_id);
 
-	@Query(value = "select * from novel where name like %:name%", nativeQuery = true)
+	@Query(value = "select * from goods where name like %:name%", nativeQuery = true)
 	List<Goods> selectByLikeName(@Param(value = "name") String name);
 
 	@Query(value = "SELECT goods.* FROM goods WHERE goods.id = ANY(SELECT collection.goods_id FROM collection WHERE collection.user_id = :user_id)", nativeQuery = true)

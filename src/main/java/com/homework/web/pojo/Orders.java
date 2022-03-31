@@ -14,7 +14,7 @@ import javax.persistence.*;
 @Table
 @JsonIgnoreProperties(value = { "hibernateLazyInitializer" })
 @ApiModel(description = "订单")
-public class Order extends AbstractAuditingEntity {
+public class Orders extends AbstractAuditingEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
